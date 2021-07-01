@@ -93,13 +93,4 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_view_data_binding) {
-            startActivity(new Intent(this, DataBindingExampleActivity.class));
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
